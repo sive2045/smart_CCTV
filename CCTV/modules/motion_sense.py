@@ -12,7 +12,7 @@ def motion_detect_mode():
     max_diff = 5
     a, b, c = None, None, None
     URL = "http://127.0.0.1:5000/detected"
-    cap = cv.VideoCapture("http://192.168.219.31:8091/?action=stream")
+    cap = cv.VideoCapture("http://127.0.0.1:8091/?action=stream")
     if cap.isOpened():
         ret, a = cap.read()
         ret, b = cap.read()
